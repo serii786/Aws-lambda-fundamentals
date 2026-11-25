@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Lambda Fundamentals</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif}
+  body{background:#f4f6f8;color:#232f3e}
+  header{background:#232f3e;color:white;padding:50px 20px;text-align:center}
+  header h1{font-size:42px}
+  header h1 span{color:#ff9900}
+  header p{margin-top:10px;color:#d5dbdb;font-size:18px}
+  .container{max-width:900px;margin:-20px auto 40px;background:white;padding:30px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.1)}
+  h2{margin:25px 0 10px;color:#232f3e;border-left:5px solid #ff9900;padding-left:10px}
+  p{line-height:1.7;color:#555}
+  .steps{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px}
+  .card{background:#fff7e6;border:1px solid #ff9900;padding:20px;border-radius:12px}
+  .card h3{color:#ff9900;margin-bottom:8px}
+  table{width:100%;border-collapse:collapse;margin-top:15px}
+  th,td{padding:12px;border:1px solid #ddd;text-align:left}
+  th{background:#232f3e;color:white}
+  .code{background:#232f3e;color:#00ff9d;padding:15px;border-radius:10px;margin-top:15px;overflow-x:auto;font-family:monospace}
+  .btn{display:inline-block;background:#ff9900;color:white;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin-top:20px}
+  footer{text-align:center;padding:20px;color:#888}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>⚡ AWS <span>Lambda</span> Fundamentals</h1>
+  <p>Learn Serverless Computing from Zero to Hero</p>
+</header>
+
+<div class="container">
+  <h2>What is AWS Lambda?</h2>
+  <p>AWS Lambda is a <b>serverless</b> compute service. You upload your code, AWS runs it when an event happens. No server to manage.</p>
+
+  <h2>How It Works? - 4 Steps</h2>
+  <div class="steps">
+    <div class="card"><h3>1. Trigger</h3><p>Event happens - S3 Upload, API Call, DB Change</p></div>
+    <div class="card"><h3>2. Execute</h3><p>Lambda runs your code automatically</p></div>
+    <div class="card"><h3>3. Scale</h3><p>Auto-scales from 0 to 1000s of requests</p></div>
+    <div class="card"><h3>4. Pay</h3><p>Pay only for milliseconds your code runs</p></div>
+  </div>
+
+  <h2>Lambda vs EC2</h2>
+  <table>
+    <tr><th>Feature</th><th>Lambda</th><th>EC2</th></tr>
+    <tr><td>Type</td><td>Serverless</td><td>Virtual Server</td></tr>
+    <tr><td>Management</td><td>AWS Manages</td><td>You Manage</td></tr>
+    <tr><td>Pricing</td><td>Per Millisecond</td><td>Per Hour</td></tr>
+    <tr><td>Scaling</td><td>Automatic</td><td>Manual</td></tr>
+  </table>
+
+  <h2>Example Code - Python</h2>
+  <div class="code">
+    def lambda_handler(event, context):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;return { 'statusCode': 200, 'body': 'Hello from AWS Lambda!' }
+  </div>
+
+  <center><a class="btn" href="https://github.com">⭐ Star on GitHub</a></center>
+</div>
+
+<footer>Made with ❤️ by Sehir | AWS Lambda Fundamentals</footer>
+
+</body>
+</html>
