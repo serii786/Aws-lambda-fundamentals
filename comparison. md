@@ -1,0 +1,7 @@
+| Feature | Lambda | EC2 |
+| :--- | :--- | :--- |
+| Type | Serverless | Virtual Server |
+| Management | AWS Manages | You Manage |
+| Pricing | Per Millisecond | Per Hour |
+| Scaling | Automatic | Manual |
+| Best For | Short Tasks | Long Running Apps |
